@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public float dashCooldown = 1f;
     public float dashBoostDuration = 10f;
 
+    private Vector3 checkpointPosition;
     private float moveSpeed;
     private bool isSpeedBoosted = false;
     private bool isJumpBoosted = false;
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentLight = GetComponent<Light2D>();
         moveSpeed = normalSpeed;
+        checkpointPosition = transform.position;
     }
 
     void Update()
@@ -132,13 +134,16 @@ public class PlayerController : MonoBehaviour
 
     public void ActivateDashBoost(Color colorParam)
     {
-        canDash = true;
+        isDashBoosted = true; // Activate dash boost state
+        canDash = true;  // Allow dashing
         currentLight.color = colorParam;
         Invoke("DeactivateDashBoost", dashBoostDuration);
     }
+
     public void DeactivateDashBoost()
     {
-        canDash = false;
+        isDashBoosted = false; // End dash boost state
+        canDash = false;  // Disable dashing
         currentLight.color = Color.white;
     }
 
@@ -164,5 +169,14 @@ public class PlayerController : MonoBehaviour
         {
             canDash = true;  // Allow dash again
         }
+    }
+    public void NewCheckpointPos(Vector3 vec)
+    {
+        checkpointPosition = vec;
+    }
+
+    public void SendToLastCheckpoint()
+    {
+        transform.position = checkpointPosition;
     }
 }
