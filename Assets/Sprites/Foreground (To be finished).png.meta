@@ -97,7 +97,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -636,7 +636,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Foreground (To be finished)_0: -8606979004135735910
+      Foreground (To be finished)_1: 1259464847274915704
+      Foreground (To be finished)_10: -2635152450469226138
+      Foreground (To be finished)_11: 9014265146934332889
+      Foreground (To be finished)_12: -8856461727202499848
+      Foreground (To be finished)_13: -2371828935713647442
+      Foreground (To be finished)_14: -1820941286426877386
+      Foreground (To be finished)_15: -6445670402116207615
+      Foreground (To be finished)_16: 4885296037852319845
+      Foreground (To be finished)_17: -3509444641809041889
+      Foreground (To be finished)_18: 236578101511268610
+      Foreground (To be finished)_19: 495981415391049607
+      Foreground (To be finished)_2: 3397375653044252217
+      Foreground (To be finished)_20: -8488392694864968676
+      Foreground (To be finished)_3: 196633045740096611
+      Foreground (To be finished)_4: -672105809976337957
+      Foreground (To be finished)_5: -1237000480293539013
+      Foreground (To be finished)_6: 1402803290148344896
+      Foreground (To be finished)_7: 6942645424512577857
+      Foreground (To be finished)_8: -7813446490406154444
+      Foreground (To be finished)_9: 1948275980335165406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

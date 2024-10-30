@@ -235,7 +235,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -1740,7 +1740,74 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Buttons (To be finished)_0: -7103030326246109968
+      Buttons (To be finished)_1: -3519394719767700942
+      Buttons (To be finished)_10: 3148191762120203910
+      Buttons (To be finished)_11: -1395291962175130471
+      Buttons (To be finished)_12: 3995662054352909020
+      Buttons (To be finished)_13: -1836716814523471708
+      Buttons (To be finished)_14: 6169927570345161776
+      Buttons (To be finished)_15: 1017041944190185992
+      Buttons (To be finished)_16: -3433956860140190551
+      Buttons (To be finished)_17: 3173233858193671550
+      Buttons (To be finished)_18: -3359473144148895083
+      Buttons (To be finished)_19: -5073806763242601306
+      Buttons (To be finished)_2: -7074555301997334546
+      Buttons (To be finished)_20: 6908217579107500342
+      Buttons (To be finished)_21: 5419808066611505489
+      Buttons (To be finished)_22: -5596174562953781322
+      Buttons (To be finished)_23: -1074638567352820357
+      Buttons (To be finished)_24: -4623624264505695635
+      Buttons (To be finished)_25: -699054425707383806
+      Buttons (To be finished)_26: -3542018233950334199
+      Buttons (To be finished)_27: -9125635147317202249
+      Buttons (To be finished)_28: 8664829050119107269
+      Buttons (To be finished)_29: -7065339328087281460
+      Buttons (To be finished)_3: -4996052888260402580
+      Buttons (To be finished)_30: 3264567459093070338
+      Buttons (To be finished)_31: -6810089195120423529
+      Buttons (To be finished)_32: 9162819982060555765
+      Buttons (To be finished)_33: 2352261657455216924
+      Buttons (To be finished)_34: 4800559822120919586
+      Buttons (To be finished)_35: -86128260070948734
+      Buttons (To be finished)_36: 2007878088869087924
+      Buttons (To be finished)_37: 1918741513232128297
+      Buttons (To be finished)_38: 7491041586206335835
+      Buttons (To be finished)_39: 6667632860008646139
+      Buttons (To be finished)_4: -8255744224603996678
+      Buttons (To be finished)_40: 6593390881613121269
+      Buttons (To be finished)_41: 5945733136331405908
+      Buttons (To be finished)_42: -6230145116651254948
+      Buttons (To be finished)_43: 633598274258199116
+      Buttons (To be finished)_44: 2656996996104534477
+      Buttons (To be finished)_45: 4711782979615003457
+      Buttons (To be finished)_46: -9130132238037769809
+      Buttons (To be finished)_47: 7145997787183570107
+      Buttons (To be finished)_48: -2679745588327498849
+      Buttons (To be finished)_49: -6584751843859856123
+      Buttons (To be finished)_5: 3289828261507560231
+      Buttons (To be finished)_50: 5091321912369573175
+      Buttons (To be finished)_51: 7172389384729944700
+      Buttons (To be finished)_52: 8382913034938966193
+      Buttons (To be finished)_53: 5866131460864141100
+      Buttons (To be finished)_54: -2988143726160981597
+      Buttons (To be finished)_55: -4495620996609348291
+      Buttons (To be finished)_56: -1246450672032207653
+      Buttons (To be finished)_57: -5486637782667723141
+      Buttons (To be finished)_58: -614410447460666467
+      Buttons (To be finished)_59: 2198111700867648961
+      Buttons (To be finished)_6: -779272306382245254
+      Buttons (To be finished)_60: 4297885735182991331
+      Buttons (To be finished)_61: 1634814287010731752
+      Buttons (To be finished)_62: -5618676832246976554
+      Buttons (To be finished)_63: 7021229610241034231
+      Buttons (To be finished)_64: -1000414715119672841
+      Buttons (To be finished)_65: 5240231617058484964
+      Buttons (To be finished)_66: -2218589478207079268
+      Buttons (To be finished)_7: -2936438737800545839
+      Buttons (To be finished)_8: 8875321001521091604
+      Buttons (To be finished)_9: 2330457835352280800
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

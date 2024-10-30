@@ -7,17 +7,27 @@ public class PlayerController : MonoBehaviour
 {
     public float normalSpeed = 3f;
     public float jumpHeight = 5f;
+
     public float speedBoost = 30f;
     public float speedBoostDuration = 10f;
+
     public float lightBoostMultiplier = 2f;
     public float lightBoostDuration = 10f;
+
     public float jumpBoostDuration = 10f;
+
+    public float dashSpeed = 10f;
+    public float dashDuration = 1f;
+    public float dashCooldown = 1f;
+    public float dashBoostDuration = 10f;
 
     private float moveSpeed;
     private bool isSpeedBoosted = false;
-    private bool isLightBoosted = false;
     private bool isJumpBoosted = false;
+    private bool isDashBoosted = false;
     private bool canDoubleJump = false;
+    private bool canDash = false;
+    private bool isDashing = false;
     private SpriteRenderer sr;
     private Rigidbody2D rb;
     private Light2D currentLight;
@@ -32,42 +42,38 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        float moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y); // Keep the y velocity unchanged
+        if (!isDashing)
+        {
+            float moveInput = Input.GetAxis("Horizontal");
+            rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y); // Keep the y velocity unchanged
 
-        if (moveInput > 0)
-        {
-            sr.flipX = false;
-        }
-        else if (moveInput < 0)
-        {
-            sr.flipX = true;
-        }
+            sr.flipX = moveInput < 0;
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (IsGrounded())
+            if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
             {
-                // Normal jump
-                Debug.Log(IsGrounded().ToString());
-                rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
-                canDoubleJump = isJumpBoosted; // Enable double jump if jump boosted
+                StartCoroutine(Dash(moveInput));
             }
-            else if (canDoubleJump)
+
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                // Double jump
-                rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
-                canDoubleJump = false; // Disable double jump after use
+                if (IsGrounded())
+                {
+                    // Normal jump
+                    Debug.Log(IsGrounded().ToString());
+                    rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+                    canDoubleJump = isJumpBoosted; // Enable double jump if jump boosted
+                }
+                else if (canDoubleJump)
+                {
+                    // Double jump
+                    rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+                    canDoubleJump = false; // Disable double jump after use
+                }
             }
         }
     }
 
-    //private bool IsGrounded()
-    //{
-    //    // Cast a ray downwards to check if the player is on the ground
-    //    return Physics2D.Raycast(transform.position, Vector2.down, 0f);
-    //}
-
+    //????????????????
     private bool IsGrounded()
     {
         // Get the player's collider
@@ -80,13 +86,13 @@ public class PlayerController : MonoBehaviour
                                      LayerMask.GetMask("Ground")) != null; // Replace "Ground" with your ground layer
     }
 
-    public void ActivateSpeedBoost()
+    public void ActivateSpeedBoost(Color colorParam)
     {
         if (!isSpeedBoosted)
         {
             isSpeedBoosted = true;
             moveSpeed = speedBoost;
-            currentLight.color = Color.red;
+            currentLight.color = colorParam;
             Invoke("DeactivateSpeedBoost", speedBoostDuration);
         }
     }
@@ -98,25 +104,23 @@ public class PlayerController : MonoBehaviour
         moveSpeed = normalSpeed;
     }
 
-    public void ActivateLightBoost()
+    public void ActivateLightBoost(Color colorParam)
     {
-        isLightBoosted = true;
         currentLight.pointLightOuterRadius *= lightBoostMultiplier;
-        currentLight.color = Color.yellow;
+        currentLight.color = colorParam;
         Invoke("DeactivateLightBoost", lightBoostDuration);
     }
 
     void DeactivateLightBoost()
     {
-        isLightBoosted = false;
         currentLight.pointLightOuterRadius /= lightBoostMultiplier;
         currentLight.color = Color.white;
     }
 
-    public void ActivateJumpBoost()
+    public void ActivateJumpBoost(Color colorParam)
     {
         isJumpBoosted = true;
-        currentLight.color = Color.green;
+        currentLight.color = colorParam;
         Invoke("DeactivateJumpBoost", jumpBoostDuration);
     }
 
@@ -124,5 +128,41 @@ public class PlayerController : MonoBehaviour
     {
         isJumpBoosted = false;
         currentLight.color = Color.white;
+    }
+
+    public void ActivateDashBoost(Color colorParam)
+    {
+        canDash = true;
+        currentLight.color = colorParam;
+        Invoke("DeactivateDashBoost", dashBoostDuration);
+    }
+    public void DeactivateDashBoost()
+    {
+        canDash = false;
+        currentLight.color = Color.white;
+    }
+
+    private IEnumerator Dash(float moveInput)
+    {
+        canDash = false;
+        isDashing = true;
+
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0;  // Disable gravity during dash
+
+        // Set dash velocity
+        rb.velocity = new Vector2(transform.localScale.x * dashSpeed * moveInput, 0);
+
+        yield return new WaitForSeconds(dashDuration);  // Wait for dash duration
+
+        rb.velocity = Vector2.zero;  // Stop dash velocity
+        rb.gravityScale = originalGravity;  // Restore gravity
+        isDashing = false;
+
+        yield return new WaitForSeconds(dashCooldown);  // Cooldown period
+        if (isDashBoosted)
+        {
+            canDash = true;  // Allow dash again
+        }
     }
 }

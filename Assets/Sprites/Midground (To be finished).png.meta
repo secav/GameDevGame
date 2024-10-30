@@ -202,7 +202,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -1476,7 +1476,63 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Midground (To be finished)_0: -3390141968882119038
+      Midground (To be finished)_1: -62996594115558357
+      Midground (To be finished)_10: -6804296892383369567
+      Midground (To be finished)_11: 1809178145630909171
+      Midground (To be finished)_12: 4460695524377723817
+      Midground (To be finished)_13: -7124925883981029890
+      Midground (To be finished)_14: 7834570440889525170
+      Midground (To be finished)_15: 115652054254354570
+      Midground (To be finished)_16: -5444091484495530089
+      Midground (To be finished)_17: 4691792821531006138
+      Midground (To be finished)_18: 2703933623625053955
+      Midground (To be finished)_19: -6943857990947179252
+      Midground (To be finished)_2: -2168354614360073345
+      Midground (To be finished)_20: 5642996504840077625
+      Midground (To be finished)_21: 2719264277197149502
+      Midground (To be finished)_22: -5910747506848328909
+      Midground (To be finished)_23: 4255727364453122478
+      Midground (To be finished)_24: -4909581436145207582
+      Midground (To be finished)_25: 3977380913268533908
+      Midground (To be finished)_26: 5831529564776805030
+      Midground (To be finished)_27: 6517921758141158670
+      Midground (To be finished)_28: -8098475685111173111
+      Midground (To be finished)_29: 5057991862448092697
+      Midground (To be finished)_3: 5584876633485640857
+      Midground (To be finished)_30: -6333653869077652889
+      Midground (To be finished)_31: -1414101185609076874
+      Midground (To be finished)_32: -6741042605484155
+      Midground (To be finished)_33: -8340897039667857506
+      Midground (To be finished)_34: 5712736412316354626
+      Midground (To be finished)_35: 6433967225860471078
+      Midground (To be finished)_36: 7905750781917889187
+      Midground (To be finished)_37: 7188693561611986051
+      Midground (To be finished)_38: -8664117694540101562
+      Midground (To be finished)_39: -8631856039790327273
+      Midground (To be finished)_4: 5797535386178703691
+      Midground (To be finished)_40: -5891990649534986474
+      Midground (To be finished)_41: -3909651057112555482
+      Midground (To be finished)_42: -1762928856398436249
+      Midground (To be finished)_43: 842751029744307171
+      Midground (To be finished)_44: -8090082950378608265
+      Midground (To be finished)_45: -1473225823800233934
+      Midground (To be finished)_46: 4847447946707387388
+      Midground (To be finished)_47: -6971716680793288452
+      Midground (To be finished)_48: -8788748854888512903
+      Midground (To be finished)_49: 2356652264807430964
+      Midground (To be finished)_5: -5822873538861975208
+      Midground (To be finished)_50: 3787794498568000841
+      Midground (To be finished)_51: 4216263792702154955
+      Midground (To be finished)_52: -1918378741559372025
+      Midground (To be finished)_53: 3260248170144485121
+      Midground (To be finished)_54: 7278833586464208440
+      Midground (To be finished)_55: 1135603844557109879
+      Midground (To be finished)_6: -8423425995033646179
+      Midground (To be finished)_7: -8427407715222657784
+      Midground (To be finished)_8: 2740272210825048808
+      Midground (To be finished)_9: -8452675617624364889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
