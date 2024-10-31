@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class ButtonScript : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class ButtonScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        GetComponent<Light2D>().intensity = 0;
         door.GetComponent<DoorScript>().Activate();
     }
 }

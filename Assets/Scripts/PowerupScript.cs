@@ -13,37 +13,19 @@ public class PowerupJump : MonoBehaviour
         Dash,
         Jump
     }
-    public PowerupType type = PowerupType.Dash;
+    public PowerupType type;
     public float powerUpDuration = 5f; // Duration of the speed boost
-    private SpriteRenderer sr;
-    public Sprite speedSprite;
-    public Sprite dashSprite;
-    public Sprite jumpSprite;
-    public Sprite lightSprite;
 
     private void Start()
     {
         light = GetComponent<Light2D>();
-        sr = GetComponent<SpriteRenderer>();
-        switch (type)
-        {
-            case PowerupType.Speed:
-                light.color = Color.red;
-                sr.sprite = speedSprite;
-                break;
-            case PowerupType.Light:
-                light.color = Color.yellow;
-                sr.sprite = lightSprite;
-                break;
-            case PowerupType.Dash:
-                sr.sprite = dashSprite;
-                break;
-            case PowerupType.Jump:
-                light.color = Color.green;
-                sr.sprite = jumpSprite;
-                break;
-        }
     }
+
+    public void ResetPowerup()
+    {
+        gameObject.SetActive(true);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -64,7 +46,7 @@ public class PowerupJump : MonoBehaviour
                     player.ActivateJumpBoost(light.color);
                     break;
             }
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

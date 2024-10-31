@@ -162,7 +162,7 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale = 0;  // Disable gravity during dash
 
         // Set dash velocity
-        rb.velocity = new Vector2(transform.localScale.x * dashSpeed * moveInput, 0);
+        rb.velocity = new Vector2(transform.localScale.x * dashSpeed * (sr.flipX? -1 : 1), 0);
 
         yield return new WaitForSeconds(dashDuration);  // Wait for dash duration
 
@@ -184,6 +184,7 @@ public class PlayerController : MonoBehaviour
 
     public void SendToLastCheckpoint()
     {
+        GameObject.Find("Game Manager").GetComponent<GameManager>().ResetAllPowerups();
         transform.position = checkpointPosition;
     }
 }

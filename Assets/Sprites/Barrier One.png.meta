@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 075baa5dcc65848428bc9f5e6eba58ad
+guid: 98f8083a87f24444580cd9e6e181ab6a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7910127128901405170
-    second: Barrier_0
+      213: -1327892831924298825
+    second: Barrier One_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Barrier_0
+      name: Barrier One_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 120
-        height: 376
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e06b6a13945993290800000000000000
-      internalID: -7910127128901405170
+      spriteID: 7bb5d5d3180629de0800000000000000
+      internalID: -1327892831924298825
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Barrier_0: -7910127128901405170
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

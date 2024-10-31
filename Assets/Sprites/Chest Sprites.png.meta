@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -87,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -226,7 +226,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chest Sprites_0: -2846498594291632951
+      Chest Sprites_1: 3901539642545527090
+      Chest Sprites_2: -4436338429912700666
+      Chest Sprites_3: 3197535218107513919
+      Chest Sprites_4: 1608895284825764257
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
