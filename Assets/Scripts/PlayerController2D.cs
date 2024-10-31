@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public float dashBoostDuration = 10f;
 
     private Vector3 checkpointPosition;
+    private Animator animator;
     private float moveSpeed;
     private bool isSpeedBoosted = false;
     private bool isJumpBoosted = false;
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
         currentLight = GetComponent<Light2D>();
         moveSpeed = normalSpeed;
         checkpointPosition = transform.position;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -48,8 +50,10 @@ public class PlayerController : MonoBehaviour
         {
             float moveInput = Input.GetAxis("Horizontal");
             rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y); // Keep the y velocity unchanged
+            animator.SetBool("isMoving", moveInput!=0? true : false);
 
-            sr.flipX = moveInput < 0;
+
+            if(moveInput > 0){ sr.flipX = false; } else if (moveInput < 0) { sr.flipX = true; }
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
             {
@@ -151,6 +155,8 @@ public class PlayerController : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+        animator.SetBool("isDashing", isDashing);
+        
 
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0;  // Disable gravity during dash
@@ -162,8 +168,9 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = Vector2.zero;  // Stop dash velocity
         rb.gravityScale = originalGravity;  // Restore gravity
-        isDashing = false;
 
+        isDashing = false;
+        animator.SetBool("isDashing", isDashing);
         yield return new WaitForSeconds(dashCooldown);  // Cooldown period
         if (isDashBoosted)
         {

@@ -15,22 +15,32 @@ public class PowerupJump : MonoBehaviour
     }
     public PowerupType type = PowerupType.Dash;
     public float powerUpDuration = 5f; // Duration of the speed boost
+    private SpriteRenderer sr;
+    public Sprite speedSprite;
+    public Sprite dashSprite;
+    public Sprite jumpSprite;
+    public Sprite lightSprite;
 
     private void Start()
     {
         light = GetComponent<Light2D>();
+        sr = GetComponent<SpriteRenderer>();
         switch (type)
         {
             case PowerupType.Speed:
                 light.color = Color.red;
+                sr.sprite = speedSprite;
                 break;
             case PowerupType.Light:
                 light.color = Color.yellow;
+                sr.sprite = lightSprite;
                 break;
             case PowerupType.Dash:
+                sr.sprite = dashSprite;
                 break;
             case PowerupType.Jump:
                 light.color = Color.green;
+                sr.sprite = jumpSprite;
                 break;
         }
     }
