@@ -7,6 +7,8 @@ public class ButtonScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject door;
+    public bool hasTimer;
+    public float timer = 3f;
     void Start()
     {
     }

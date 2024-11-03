@@ -1,0 +1,420 @@
+fileFormatVersion: 2
+guid: 8693fe872dfe5b14296062813d35d2f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4017234516512280613
+    second: Buttons (To be finished) (1)_0
+  - first:
+      213: 4918262189512461838
+    second: Buttons (To be finished) (1)_1
+  - first:
+      213: 6428811236916952829
+    second: Buttons (To be finished) (1)_2
+  - first:
+      213: 3348670964116148064
+    second: Buttons (To be finished) (1)_3
+  - first:
+      213: 2857198041301217967
+    second: Buttons (To be finished) (1)_4
+  - first:
+      213: -8117215371243221152
+    second: Buttons (To be finished) (1)_5
+  - first:
+      213: 3845322025488831385
+    second: Buttons (To be finished) (1)_6
+  - first:
+      213: 4876551261885379349
+    second: Buttons (To be finished) (1)_7
+  - first:
+      213: -9142674621171003158
+    second: Buttons (To be finished) (1)_8
+  - first:
+      213: 1580854154334206508
+    second: Buttons (To be finished) (1)_9
+  - first:
+      213: -4362129639807941142
+    second: Buttons (To be finished) (1)_10
+  - first:
+      213: -4561136491416663066
+    second: Buttons (To be finished) (1)_11
+  - first:
+      213: 2970653893973586350
+    second: Buttons (To be finished) (1)_12
+  - first:
+      213: -4543046874778996584
+    second: Buttons (To be finished) (1)_13
+  - first:
+      213: -2231842082763692101
+    second: Buttons (To be finished) (1)_14
+  - first:
+      213: -5650428974224131520
+    second: Buttons (To be finished) (1)_15
+  - first:
+      213: 4712134655044101561
+    second: Buttons (To be finished) (1)_16
+  - first:
+      213: 56039185165525112
+    second: Buttons (To be finished) (1)_17
+  - first:
+      213: -8119215081822132868
+    second: Buttons (To be finished) (1)_18
+  - first:
+      213: -5146468649208105618
+    second: Buttons (To be finished) (1)_19
+  - first:
+      213: -8044579015733726867
+    second: Buttons (To be finished) (1)_20
+  - first:
+      213: 8390983375810247877
+    second: Buttons (To be finished) (1)_21
+  - first:
+      213: -4598996277303916756
+    second: Buttons (To be finished) (1)_22
+  - first:
+      213: 6645882283930503193
+    second: Buttons (To be finished) (1)_23
+  - first:
+      213: -1471110062418875106
+    second: Buttons (To be finished) (1)_24
+  - first:
+      213: -5580525796525487687
+    second: Buttons (To be finished) (1)_25
+  - first:
+      213: 2247512571247865796
+    second: Buttons (To be finished) (1)_26
+  - first:
+      213: -8889733985781293715
+    second: Buttons (To be finished) (1)_27
+  - first:
+      213: -2553058102768673819
+    second: Buttons (To be finished) (1)_28
+  - first:
+      213: 8052747521217614646
+    second: Buttons (To be finished) (1)_29
+  - first:
+      213: 1659070920674764479
+    second: Buttons (To be finished) (1)_30
+  - first:
+      213: 6181201051328925119
+    second: Buttons (To be finished) (1)_31
+  - first:
+      213: -5126437981921100956
+    second: Buttons (To be finished) (1)_32
+  - first:
+      213: -5383011225269301494
+    second: Buttons (To be finished) (1)_33
+  - first:
+      213: 4403563082826791160
+    second: Buttons (To be finished) (1)_34
+  - first:
+      213: -7541108621090664564
+    second: Buttons (To be finished) (1)_35
+  - first:
+      213: 2235551952131377220
+    second: Buttons (To be finished) (1)_36
+  - first:
+      213: -6565992474768922360
+    second: Buttons (To be finished) (1)_37
+  - first:
+      213: 735666150450515951
+    second: Buttons (To be finished) (1)_38
+  - first:
+      213: -6063673634494983067
+    second: Buttons (To be finished) (1)_39
+  - first:
+      213: -6890079957948224697
+    second: Buttons (To be finished) (1)_40
+  - first:
+      213: 3805833111386237654
+    second: Buttons (To be finished) (1)_41
+  - first:
+      213: 1475740707168633393
+    second: Buttons (To be finished) (1)_42
+  - first:
+      213: -1592905826702597216
+    second: Buttons (To be finished) (1)_43
+  - first:
+      213: -5136380689045811658
+    second: Buttons (To be finished) (1)_44
+  - first:
+      213: -8067873267120846669
+    second: Buttons (To be finished) (1)_45
+  - first:
+      213: 3008489986928124950
+    second: Buttons (To be finished) (1)_46
+  - first:
+      213: 4660731027501868072
+    second: Buttons (To be finished) (1)_47
+  - first:
+      213: -4738156323312226676
+    second: Buttons (To be finished) (1)_48
+  - first:
+      213: -3703112070767396104
+    second: Buttons (To be finished) (1)_49
+  - first:
+      213: -84057146331972567
+    second: Buttons (To be finished) (1)_50
+  - first:
+      213: 2440515720503480916
+    second: Buttons (To be finished) (1)_51
+  - first:
+      213: -8787712842031040624
+    second: Buttons (To be finished) (1)_52
+  - first:
+      213: -1536113164932461616
+    second: Buttons (To be finished) (1)_53
+  - first:
+      213: 6036216207871485541
+    second: Buttons (To be finished) (1)_54
+  - first:
+      213: -4303298744212321231
+    second: Buttons (To be finished) (1)_55
+  - first:
+      213: -2478878581610016241
+    second: Buttons (To be finished) (1)_56
+  - first:
+      213: -8257695149487238980
+    second: Buttons (To be finished) (1)_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Buttons (To be finished) (1)_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 640
+        width: 593
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d2c54aeecfb194f8a3e24be780c4a4
+      internalID: -783829070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons (To be finished) (1)_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 512
+        width: 619
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a791de2af5cced47ae012be1d2d4cd3
+      internalID: -1083106208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons (To be finished) (1)_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 384
+        width: 726
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e982394b1c9e1b4c859652ba0190561
+      internalID: 1180649784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons (To be finished) (1)_3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 256
+        width: 610
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe523bfe3ee1984d932fd7437bc5978
+      internalID: -1940577565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons (To be finished) (1)_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 129
+        width: 545
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0407b4108a9c6fd4a91f9ed4dab9a831
+      internalID: -1930888057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons (To be finished) (1)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 768
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1f553d382a513429919b938cc0e804
+      internalID: 927844940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: eec8899c8cd701342b9fbe6943d2399a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Buttons (To be finished) (1)_0: -783829070
+      Buttons (To be finished) (1)_1: -1083106208
+      Buttons (To be finished) (1)_2: 1180649784
+      Buttons (To be finished) (1)_3: -1940577565
+      Buttons (To be finished) (1)_4: -1930888057
+      Buttons (To be finished) (1)_5: 927844940
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,6 +5,7 @@ using UnityEngine.Rendering.Universal;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool demoMode = false;
     public float normalSpeed = 3f;
     public float jumpHeight = 5f;
 
@@ -42,16 +43,19 @@ public class PlayerController : MonoBehaviour
         moveSpeed = normalSpeed;
         checkpointPosition = transform.position;
         animator = GetComponent<Animator>();
+        if (demoMode)
+        {
+            StartCoroutine(SimulateInputs());
+        }
     }
 
     void Update()
     {
-        if (!isDashing)
+        if (!isDashing && !demoMode)
         {
             float moveInput = Input.GetAxis("Horizontal");
             rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y); // Keep the y velocity unchanged
             animator.SetBool("isMoving", moveInput!=0? true : false);
-
 
             if(moveInput > 0){ sr.flipX = false; } else if (moveInput < 0) { sr.flipX = true; }
 
@@ -186,5 +190,99 @@ public class PlayerController : MonoBehaviour
     {
         GameObject.Find("Game Manager").GetComponent<GameManager>().ResetAllPowerups();
         transform.position = checkpointPosition;
+    }
+
+    IEnumerator SimulateInputs()
+    {
+        while (true)
+        {
+            // Simulate moving right for 2 seconds
+            yield return MoveRight(1.5f);
+
+            // Simulate standing still for 1 second
+            yield return StandStill(2.0f);
+
+            yield return MoveRight(1.5f);
+
+
+            // Simulate jumping
+            //yield return Jump();
+
+            // Simulate standing still for 1 second
+            yield return StandStill(8.0f);
+
+            // Simulate moving left for 2 seconds
+            yield return MoveLeft(2.0f);
+
+            // Simulate standing still for 1 second
+            yield return StandStill(8.0f);
+
+            yield return MoveLeft(2.0f);
+
+            yield return StandStill(6.0f);
+
+            yield return MoveLeft(2.0f);
+
+            yield return StandStill(6.0f);
+
+            yield return MoveRight(3f);
+
+            yield return StandStill(10.0f);
+
+
+        }
+    }
+
+    IEnumerator MoveRight(float duration)
+    {
+        float time = 0;
+        while (time < duration)
+        {
+            // Mimic the "D" key by setting velocity directly
+            rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+            animator.SetBool("isMoving", true);
+            sr.flipX = false;
+
+            time += Time.deltaTime;
+            yield return null;
+        }
+        // Stop running
+        animator.SetBool("isMoving", false);
+    }
+
+    IEnumerator MoveLeft(float duration)
+    {
+        float time = 0;
+        while (time < duration)
+        {
+            // Mimic the "A" key by setting velocity directly
+            rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
+            animator.SetBool("isMoving", true);
+            sr.flipX = true;
+
+            time += Time.deltaTime;
+            yield return null;
+        }
+        // Stop running
+        animator.SetBool("isMoving", false);
+    }
+
+    IEnumerator Jump()
+    {
+        // Check if the player is grounded before jumping
+        if (IsGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            //animator.SetTrigger("Jump");
+            //GetComponent<AudioSource>().Play();
+            yield return new WaitForSeconds(1.0f); // Adjust based on jump duration
+        }
+    }
+
+    IEnumerator StandStill(float duration)
+    {
+        rb.velocity = new Vector2(0, rb.velocity.y); // Stop horizontal movement
+        animator.SetBool("isMoving", false); // Set running animation to false
+        yield return new WaitForSeconds(duration); // Wait for specified duration
     }
 }

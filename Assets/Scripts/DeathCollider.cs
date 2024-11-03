@@ -18,8 +18,11 @@ public class DeathCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerController player = collision.GetComponent<PlayerController>();
-        player.SendToLastCheckpoint();
-        GetComponent<AudioSource>().Play();
+        if (collision.tag == "Player")
+        {
+            PlayerController player = collision.GetComponent<PlayerController>();
+            player.SendToLastCheckpoint();
+            GetComponent<AudioSource>().Play();
+        }
     }
 }

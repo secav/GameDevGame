@@ -179,9 +179,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c85c106ee75c594ba57f4a6f584afc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  demoMode: 0
   normalSpeed: 5
-  jumpHeight: 8
-  speedBoost: 6
+  jumpHeight: 10
+  speedBoost: 8
   speedBoostDuration: 10
   lightBoostMultiplier: 2
   lightBoostDuration: 10
@@ -360,7 +361,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 9.03
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
