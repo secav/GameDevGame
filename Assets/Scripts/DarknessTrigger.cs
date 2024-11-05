@@ -5,13 +5,12 @@ using UnityEngine.Rendering.Universal;
 
 public class DarknessTrigger : MonoBehaviour
 {
-    public GameObject darktrig;
+    public float newIntensity = 0.007f;
     public Light2D light2;
-    private Light2D light;
     // Start is called before the first frame update
     void Start()
     {
-        light = GetComponent<Light2D>();
+        
     }
 
     // Update is called once per frame
@@ -25,8 +24,7 @@ public class DarknessTrigger : MonoBehaviour
         if(collision.tag == "Player")
         {
             Debug.Log("off");
-            light2.intensity = 0.007f;
-            light.intensity = 0.007f;
+            light2.intensity = newIntensity;
         }
     }
 }

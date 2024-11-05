@@ -7,9 +7,12 @@ public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     GameObject[] powerups;
+    GameObject[] spikes;
     void Start()
     {
         powerups = GameObject.FindGameObjectsWithTag("Powerup");
+        spikes = GameObject.FindGameObjectsWithTag("Spikes");
+        
     }
 
     // Update is called once per frame
@@ -24,6 +27,12 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log(powerup);
             powerup.GetComponent<PowerupJump>().ResetPowerup();
+        }
+        
+        foreach(GameObject spike in spikes)
+        {
+            Debug.Log(spike);
+            spike.GetComponent<FallingSpikeScript>().ResetSpike();
         }
     }
 

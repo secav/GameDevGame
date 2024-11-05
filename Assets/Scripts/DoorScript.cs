@@ -6,6 +6,7 @@ public class DoorScript : MonoBehaviour
 {
     public float speed = 3f;
     private bool active = false;
+    private bool reappearing = false;
     private Color objectColor;
     public float decreaseRate = 10f;
     private Renderer objectRenderer;
@@ -40,10 +41,48 @@ public class DoorScript : MonoBehaviour
                 active = false; // Stop the process if needed
             }
         }
+        else if (reappearing)
+        {
+            // Increase alpha over time for reappearing
+            objectColor.a += decreaseRate * Time.deltaTime;
+            objectColor.a = Mathf.Clamp(objectColor.a, 0f, 1f);
+            objectRenderer.material.color = objectColor;
+
+            // Enable collider when alpha is 1
+            if (objectColor.a >= 1f)
+            {
+                objectCollider.enabled = true;
+                reappearing = false; // Stop the process if needed
+            }
+        }
+
     }
 
     public void Activate()
     {
         active = true; // Start the transparency process
+    }
+
+    public void Deactivate()
+    {
+        if (!reappearing) // Prevent reappearing if already reappearing
+        {
+            StartCoroutine(Reappear()); // Start the reappearing coroutine
+        }
+        active = false;
+    }
+
+    private IEnumerator Reappear()
+    {
+        reappearing = true; // Start the reappearing process
+        while (objectColor.a < 1f) // Gradually increase alpha until fully opaque
+        {
+            objectColor.a += decreaseRate * Time.deltaTime;
+            objectColor.a = Mathf.Clamp(objectColor.a, 0f, 1f);
+            objectRenderer.material.color = objectColor;
+            yield return null; // Wait for the next frame
+        }
+        objectCollider.enabled = true; // Enable collider when fully visible
+        reappearing = false; // Mark reappearing as complete
     }
 }

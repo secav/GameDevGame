@@ -34,12 +34,14 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer sr;
     private Rigidbody2D rb;
     private Light2D currentLight;
+    private float startingLightRadius;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         currentLight = GetComponent<Light2D>();
+        startingLightRadius = currentLight.pointLightOuterRadius;
         moveSpeed = normalSpeed;
         checkpointPosition = transform.position;
         animator = GetComponent<Animator>();
@@ -62,6 +64,11 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
             {
                 StartCoroutine(Dash(moveInput));
+            }
+
+            if (Input.GetKey(KeyCode.R))
+            {
+                SendToLastCheckpoint();
             }
 
             if (Input.GetKeyDown(KeyCode.Space))
@@ -123,7 +130,7 @@ public class PlayerController : MonoBehaviour
 
     void DeactivateLightBoost()
     {
-        currentLight.pointLightOuterRadius /= lightBoostMultiplier;
+        currentLight.pointLightOuterRadius =startingLightRadius;
         currentLight.color = Color.white;
     }
 
@@ -189,9 +196,19 @@ public class PlayerController : MonoBehaviour
     public void SendToLastCheckpoint()
     {
         GameObject.Find("Game Manager").GetComponent<GameManager>().ResetAllPowerups();
+        DeactivateDashBoost();
+        DeactivateJumpBoost();
+        DeactivateLightBoost();
+        DeactivateSpeedBoost();
         transform.position = checkpointPosition;
     }
 
+
+
+
+
+
+    //Demo mode stuff
     IEnumerator SimulateInputs()
     {
         while (true)
