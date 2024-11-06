@@ -22,6 +22,7 @@ public class KeyScript : MonoBehaviour
         if(collision.tag == "Player")
         {
             exitDoor.openDoor();
+            gameObject.SetActive(false);
         }
     }
 }

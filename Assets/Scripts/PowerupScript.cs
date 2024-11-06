@@ -34,16 +34,16 @@ public class PowerupJump : MonoBehaviour
             switch (type)
             {
                 case PowerupType.Speed:
-                    player.ActivateSpeedBoost(light.color);
+                    player.ActivateSpeedBoost(light.color,powerUpDuration);
                     break;
                 case PowerupType.Light:
-                    player.ActivateLightBoost(light.color);
+                    player.ActivateLightBoost(light.color, powerUpDuration);
                     break;
                 case PowerupType.Dash:
-                    player.ActivateDashBoost(light.color);
+                    player.ActivateDashBoost(light.color, powerUpDuration);
                     break;
                 case PowerupType.Jump:
-                    player.ActivateJumpBoost(light.color);
+                    player.ActivateJumpBoost(light.color, powerUpDuration);
                     break;
             }
             gameObject.SetActive(false);

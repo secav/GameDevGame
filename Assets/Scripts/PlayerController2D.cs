@@ -103,14 +103,14 @@ public class PlayerController : MonoBehaviour
                                      LayerMask.GetMask("Ground")) != null; // Replace "Ground" with your ground layer
     }
 
-    public void ActivateSpeedBoost(Color colorParam)
+    public void ActivateSpeedBoost(Color colorParam, float duration)
     {
         if (!isSpeedBoosted)
         {
             isSpeedBoosted = true;
             moveSpeed = speedBoost;
             currentLight.color = colorParam;
-            Invoke("DeactivateSpeedBoost", speedBoostDuration);
+            Invoke("DeactivateSpeedBoost", duration);
         }
     }
 
@@ -121,11 +121,11 @@ public class PlayerController : MonoBehaviour
         moveSpeed = normalSpeed;
     }
 
-    public void ActivateLightBoost(Color colorParam)
+    public void ActivateLightBoost(Color colorParam, float duration)
     {
         currentLight.pointLightOuterRadius *= lightBoostMultiplier;
         currentLight.color = colorParam;
-        Invoke("DeactivateLightBoost", lightBoostDuration);
+        Invoke("DeactivateLightBoost", duration);
     }
 
     void DeactivateLightBoost()
@@ -134,11 +134,11 @@ public class PlayerController : MonoBehaviour
         currentLight.color = Color.white;
     }
 
-    public void ActivateJumpBoost(Color colorParam)
+    public void ActivateJumpBoost(Color colorParam, float duration)
     {
         isJumpBoosted = true;
         currentLight.color = colorParam;
-        Invoke("DeactivateJumpBoost", jumpBoostDuration);
+        Invoke("DeactivateJumpBoost", duration);
     }
 
     void DeactivateJumpBoost()
@@ -147,12 +147,12 @@ public class PlayerController : MonoBehaviour
         currentLight.color = Color.white;
     }
 
-    public void ActivateDashBoost(Color colorParam)
+    public void ActivateDashBoost(Color colorParam, float duration)
     {
         isDashBoosted = true; // Activate dash boost state
         canDash = true;  // Allow dashing
         currentLight.color = colorParam;
-        Invoke("DeactivateDashBoost", dashBoostDuration);
+        Invoke("DeactivateDashBoost", duration);
     }
 
     public void DeactivateDashBoost()

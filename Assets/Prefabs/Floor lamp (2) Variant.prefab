@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &24395933307249995
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1926599719467125362, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -61.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926599719467125362, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.5499454
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926599719467125362, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926599719467125362, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926599719467125362, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926599719467125362, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926599719467125362, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926599719467125362, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926599719467125362, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926599719467125362, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983760614034394490, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045532477636464556, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644400172785639391, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.257
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014560796468752711, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
+      propertyPath: m_Name
+      value: Floor lamp (2) Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4445a5a924b72544f9b5b705ab3c46ee, type: 3}
