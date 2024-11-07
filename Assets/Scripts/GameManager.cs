@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -34,6 +35,14 @@ public class GameManager : MonoBehaviour
             Debug.Log(spike);
             spike.GetComponent<FallingSpikeScript>().ResetSpike();
         }
+    }
+
+    public void DestroyPlayer(Vector3 checkpointPos)
+    {
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        GameObject newPlayer = Instantiate(playerObj);
+        playerObj.SetActive(false);
+        newPlayer.transform.position = checkpointPos;
     }
 
 }

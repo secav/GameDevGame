@@ -195,12 +195,15 @@ public class PlayerController : MonoBehaviour
 
     public void SendToLastCheckpoint()
     {
-        GameObject.Find("Game Manager").GetComponent<GameManager>().ResetAllPowerups();
+        GameManager manager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        manager.ResetAllPowerups();
         DeactivateDashBoost();
         DeactivateJumpBoost();
         DeactivateLightBoost();
         DeactivateSpeedBoost();
-        transform.position = checkpointPosition;
+        manager.DestroyPlayer(checkpointPosition);
+        //transform.position = checkpointPosition;
+
     }
 
 
