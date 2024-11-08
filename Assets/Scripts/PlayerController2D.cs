@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Rendering.Universal;
 
 public class PlayerController : MonoBehaviour
@@ -22,6 +23,11 @@ public class PlayerController : MonoBehaviour
     public float dashCooldown = 1f;
     public float dashBoostDuration = 10f;
 
+    public AudioClip jumpSound;
+    public AudioClip dashSound;
+    public AudioClip doubleJumpSound;
+    private AudioSource audioSource;
+
     private Vector3 checkpointPosition;
     private Animator animator;
     private float moveSpeed;
@@ -41,6 +47,7 @@ public class PlayerController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         currentLight = GetComponent<Light2D>();
+        audioSource = GetComponent<AudioSource>();
         startingLightRadius = currentLight.pointLightOuterRadius;
         moveSpeed = normalSpeed;
         checkpointPosition = transform.position;
@@ -63,6 +70,8 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
             {
+                audioSource.clip = dashSound;
+                audioSource.Play();
                 StartCoroutine(Dash(moveInput));
             }
 
@@ -75,6 +84,8 @@ public class PlayerController : MonoBehaviour
             {
                 if (IsGrounded())
                 {
+                    audioSource.clip = jumpSound;
+                    audioSource.Play();
                     // Normal jump
                     Debug.Log(IsGrounded().ToString());
                     rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
@@ -82,6 +93,8 @@ public class PlayerController : MonoBehaviour
                 }
                 else if (canDoubleJump)
                 {
+                    audioSource.clip = doubleJumpSound;
+                    audioSource.Play();
                     // Double jump
                     rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
                     canDoubleJump = false; // Disable double jump after use

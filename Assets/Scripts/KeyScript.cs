@@ -21,6 +21,7 @@ public class KeyScript : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            GetComponent<AudioSource>().Play();
             exitDoor.openDoor();
             gameObject.SetActive(false);
         }

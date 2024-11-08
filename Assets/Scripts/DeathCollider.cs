@@ -20,6 +20,7 @@ public class DeathCollider : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            GetComponentInParent<AudioSource>().Play();
             PlayerController player = collision.GetComponent<PlayerController>();
             player.SendToLastCheckpoint();
             GetComponent<AudioSource>().Play();

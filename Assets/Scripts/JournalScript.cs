@@ -39,6 +39,7 @@ public class JournalScript : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            GetComponent<AudioSource>().Play();
             // Enable the Open child and disable the Closed child
             textMesh.SetActive(true);
             openJournal.SetActive(true);

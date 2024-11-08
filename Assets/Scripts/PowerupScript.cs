@@ -30,6 +30,7 @@ public class PowerupJump : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            GetComponent<AudioSource>().Play();
             PlayerController player = collision.GetComponent<PlayerController>();
             switch (type)
             {

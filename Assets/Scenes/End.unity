@@ -70357,6 +70357,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1137386342
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2293554933263509421, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: targetScene
+      value: Title Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187953020399797685, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_Name
+      value: Door (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760229939828389071, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.404984
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760229939828389071, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760229939828389071, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17867607
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760229939828389071, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760229939828389071, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760229939828389071, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760229939828389071, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760229939828389071, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760229939828389071, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760229939828389071, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d544711b7a1fdb44798f0fdd2cdf7467, type: 3}
 --- !u!1001 &1142133780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70500,6 +70561,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1162983388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3085150387089670637, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 3085150387089670637, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.08047
+      objectReference: {fileID: 0}
+    - target: {fileID: 3085150387089670637, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3085150387089670637, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3085150387089670637, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3085150387089670637, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3085150387089670637, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3085150387089670637, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3085150387089670637, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3085150387089670637, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586688298248214488, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: MinDistance
+      value: 0.5220051
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001592092418171276, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
+      propertyPath: m_Name
+      value: Exit Key
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5ddb4d097a6b45546b147b03f00b4ce7, type: 3}
 --- !u!1 &1176818102
 GameObject:
   m_ObjectHideFlags: 0
@@ -71175,6 +71297,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1783985617101122656, guid: a715525aa3334b24cac045a786fd54bc, type: 3}
+      propertyPath: journalText
+      value: Part of the cave has collapsed closing me in, i found the drawing but
+        now i'm afraid i won't be able to get hom-
+      objectReference: {fileID: 0}
     - target: {fileID: 3822922904728597404, guid: a715525aa3334b24cac045a786fd54bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.77
@@ -71429,3 +71556,5 @@ SceneRoots:
   - {fileID: 330819035}
   - {fileID: 1882948423}
   - {fileID: 1759033518}
+  - {fileID: 1162983388}
+  - {fileID: 1137386342}

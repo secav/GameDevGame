@@ -45,6 +45,10 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    public void playSound(GameObject button)
+    {
+        GetComponent<AudioSource>().Play();
+    }
     //TODO in the future, maybe
     //public void OpenSettings()
     //{

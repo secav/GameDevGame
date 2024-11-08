@@ -8,7 +8,9 @@ public class CheckpointTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
     public bool isCheckpoint = false;
+    private bool activated = false;
     private Light2D light;
+
     void Start()
     {
         light = GetComponentInChildren<Light2D>();
@@ -29,6 +31,12 @@ public class CheckpointTrigger : MonoBehaviour
     {
         if (isCheckpoint && collision.tag == "Player")
         {
+            if (!activated)
+            {
+                GetComponent<AudioSource>().Play();
+            }
+            activated = true;
+            GetComponent<AudioSource>().Play();
             GetComponent<Animator>().enabled = true;
             light.intensity = 1;
             PlayerController player = collision.GetComponent<PlayerController>();
